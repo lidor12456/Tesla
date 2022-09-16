@@ -1,0 +1,168 @@
+
+@font-face {
+  font-family: gotham-light;
+  src: url(/Tesla/assets/fonts/GothamSSm-Light_Web.otf);
+}
+@font-face {
+  font-family: gotham-med;
+  src: url(/Tesla/assets/fonts/GothamSSm-Medium_Web.otf);
+}
+@font-face {
+  font-family: gotham-bold;
+  src: url(/Tesla/assets/fonts/GothamSSm-Bold_Web.otf);
+}
+@font-face {
+  font-family: gotham-xlight;
+  src: url(/Tesla/assets/fonts/GothamSSm-XLight_Web.otf);
+}
+@font-face {
+  font-family: gotham-book;
+  src: url(/Tesla/assets/fonts/GothamSSm-Book_Web.otf);
+}
+body {
+  font-family: gotham-bold;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* nav bar */
+
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo-nav {
+    height: 18px;
+    width: 100px;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 30px;
+    outline-offset:2px
+    
+}
+.center-nav {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-around; */
+  color: #fff;
+  font-size: 14px;
+  margin-left: 100px;
+
+
+
+}
+
+.right-nav {
+    display: flex;
+    align-items:flex-end;
+    color: #fff;
+  font-size: 14px;
+
+}
+
+
+.right-nav a {
+  color: #fff;
+  padding: 10px 20px;
+}
+.center-nav a {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* .navbar a:hover {
+  border-bottom: #28a745 2px solid;
+} */
+
+.right-nav ul {
+  display: flex;
+}
+.center-nav ul {
+  display: flex;
+}
+
+/* First section */
+.areas {
+    height: 100vh;
+
+}
+.area-1 {
+    background-image: url("/Tesla/assets/imgs/M3-Hero-LHD-US-D.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.title-1 {
+    font-family: gotham-bold;
+    font-weight: 500;
+     font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* 2nd section */
+.area-2 img {
+    height: 100%;
+    width: 100%;
+    
+}
+.area-2 {
+    background-color: #fff;
+    display: flex;
+    font-family:gotham-light;
+    font-size: 14px;
+    font-weight: 400;
+    color: #393c41;
+
+}
+
+.area-2 .left-side {
+    width: 75%;
+}
+.area-2 .right-side {
+    width: 25%;
+    margin-top: 2%;
+    padding: 3%;
+    letter-spacing: 0.1px;
+    
+}
+.right-side p::first-line {
+font-family: gotham-bold;
+    
+}
+.right-side h2 {
+    font-family: gotham-med;
+    font-size: 28px;
+    font-weight: 500;
+}
+.right-side span {
+    font-family: gotham-light;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* mobile and tablet */
+@media (max-width: 800px) {
+    .right-nav,.center-nav,.right-nav ul,.center-nav ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+    }
+    .logo-nav {
+        display: none;
+    }
+  }
