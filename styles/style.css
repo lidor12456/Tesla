@@ -81,9 +81,9 @@ a {
   padding: 10px 20px;
 }
 
-/* .navbar a:hover {
-  border-bottom: #28a745 2px solid;
-} */
+.main-nav a:hover {
+  border-bottom: #393c41 2px solid;
+}
 
 .right-nav ul {
   display: flex;
@@ -106,17 +106,32 @@ a {
 }
 
 .details {
-height: 450px; 
-/* width: 50%;    */
-display: flex;
-align-items: flex-end;
-justify-content: space-around;
-gap:1px;
-
+    height: 68vh; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
+
+.arrow-down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+}
+.margin-1 {
+    margin-top: -30px;
+}
+
+.margin-2 {
+    margin-top: 150px;
+   
+}
+
 .details p {
-font-size: 28px;
-color: #fff;
+    font-size: 28px;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
 }
 
 .details p span {
@@ -142,7 +157,10 @@ color: #fff;
     text-align: center;
 }
 
-
+.arrow-down img {
+    height: 50px;
+    width: 50px;
+}
 
 /* 2nd section */
 .area-2 img {
@@ -215,23 +233,59 @@ font-family: gotham-bold;
     border-radius: 5px;
   }
 
-  /* .btn2 {
 
-    width:35px;
-    height:35px;
-    border: 2px solid #000000;
-    border-radius: 50%;
-    color: #000000;
-    text-align:center;
-    font-size:25px;
-
-  } */
 .bottom-btn img {
     height: 30px;
     width: 30px;
 
 }
 
+/* area 3 */
+/* .area-3 {
+    display: flex;
+    background-color: #fff;
+    font-family:gotham-light;
+    font-size: 14px;
+    font-weight: 400;
+} */
+
+.area-3  {
+
+
+}
+.top-side  {
+    height: 70%;
+    
+    background-image: url("/Tesla/assets/imgs/lhd-range-hero-desktop.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+} 
+
+.bottom-side {
+    height: 30%;
+}
+.details2 {
+    height: 65vh; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.details2 p {
+    font-size: 28px;
+    color: #fff;
+    padding: 20px;
+    /* margin-top: 50px; */
+}
+
+.details2 p span {
+    font-family: gotham-med;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    }
 
 
 
