@@ -39,9 +39,15 @@ a {
 .main-nav {
     display: flex;
     justify-content: space-around;
-
+    position: relative;
+    
 }
 
+.main-nav a:hover {    
+    transition: all 0.5s linear;
+  background-color: #393c41;
+  z-index: 1;
+}
 
 .logo-nav {
     height: 18px;
@@ -54,7 +60,6 @@ a {
 .center-nav {
   display: flex;
   align-items: flex-start;
-  /* justify-content: space-around; */
   color: #fff;
   font-size: 14px;
   margin-left: 100px;
@@ -81,9 +86,6 @@ a {
   padding: 10px 20px;
 }
 
-.main-nav a:hover {
-  border-bottom: #393c41 2px solid;
-}
 
 .right-nav ul {
   display: flex;
@@ -111,6 +113,19 @@ a {
     align-items: flex-end;
     justify-content: center;
 }
+.slide-up {
+  animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both
+}
+  
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px) }
+  100% {
+    transform: translateY(0)}
+}
+
+
+
 
 .arrow-down {
     display: flex;
@@ -118,14 +133,30 @@ a {
     align-items: center;
     justify-content: center;   
 }
+.updown {
+    animation: MoveUpDown 1s linear infinite;
+    position: relative;
+
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 5px;
+    }
+  }
+
+
+
+
+
 .margin-1 {
     margin-top: -30px;
 }
 
-.margin-2 {
-    margin-top: 150px;
-   
-}
+
 
 .details p {
     font-size: 28px;
@@ -141,6 +172,7 @@ a {
     }
 
     .btn3 {
+        display: flex;
         border: 3px solid #ffffff;
         color: #ffffff;
         font-size:14px;
@@ -249,10 +281,6 @@ font-family: gotham-bold;
     font-weight: 400;
 } */
 
-.area-3  {
-
-
-}
 .top-side  {
     height: 70%;
     
@@ -263,9 +291,9 @@ font-family: gotham-bold;
     
 } 
 
-.bottom-side {
+/* .bottom-side {
     height: 30%;
-}
+} */
 .details2 {
     height: 65vh; 
     display: flex;
